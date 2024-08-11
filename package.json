@@ -1,0 +1,51 @@
+{
+	"name": "create-story",
+	"version": "1.0.0",
+	"description": "A Remotion template for TikTok-style captions",
+	"repository": {},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.2",
+		"@emotion/react": "^11.11.4",
+		"@emotion/styled": "^11.11.5",
+		"@react-md/icon": "^5.1.6",
+		"@remotion/animation-utils": "4.0.134",
+		"@remotion/cli": "4.0.134",
+		"@remotion/layout-utils": "4.0.134",
+		"@remotion/media-utils": "4.0.134",
+		"@remotion/zod-types": "4.0.134",
+		"axios": "^1.6.8",
+		"boxicons": "^2.1.4",
+		"fluent-ffmpeg": "^2.1.2",
+		"framer-motion": "^11.0.28",
+		"openai": "^4.38.5",
+		"puppeteer": "^22.12.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-icons": "^5.1.0",
+		"remotion": "4.0.134",
+		"say": "^0.16.0",
+		"wav": "^1.0.2",
+		"wav-file-info": "^0.0.10",
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@remotion/eslint-config": "4.0.134",
+		"@remotion/install-whisper-cpp": "4.0.134",
+		"@types/fluent-ffmpeg": "^2.1.24",
+		"@types/react": "^18.0.26",
+		"@types/web": "^0.0.86",
+		"eslint": "^8.43.0",
+		"prettier": "^3.2.5",
+		"typescript": "^4.9.4"
+	},
+	"scripts": {
+		"start": "remotion studio",
+		"render": "remotion render --timeout 300000 CaptionedVideo",
+		"still": "remotion still --image-format jpeg",
+		"upgrade": "remotion upgrade",
+		"test": "eslint src --ext ts,tsx,js,jsx && tsc",
+		"create-subtitles": "node sub.mjs"
+	},
+	"packageManager": "npm@8.13.2"
+}
